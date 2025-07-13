@@ -8,6 +8,9 @@ const app = express();
 app.use(cors());
 app.use(bodyParser.json());
 
+app.get('/', (req, res) => {
+  res.send('Welcome to the Expense Tracker API');
+});
 app.use('/api/auth', authRoutes);
 app.use('/api/expenses', expenseRoutes);
 
