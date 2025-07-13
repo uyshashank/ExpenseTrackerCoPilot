@@ -1,5 +1,5 @@
 // API utility for authentication and expenses
-export const API_URL = 'http://localhost:5000/api';
+export const API_URL = 'https://expensetrackercopilot.onrender.com';
 
 export async function register(username: string, password: string) {
   const res = await fetch(`${API_URL}/auth/register`, {
